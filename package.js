@@ -1,10 +1,10 @@
 Package.describe({
-  name: 'poetic:materialize-scss',
+  name: 'yang2007chun:materialize-scss',
   version: '0.0.1',
   // Brief, one-line summary of the package.
-  summary: '',
+  summary: 'materialize sass',
   // URL to the Git repository containing the source code for this package.
-  git: '',
+  git: 'https://github.com/poetic/meteor-materialize-sass',
   // By default, Meteor will default to using README.md for documentation.
   // To avoid submitting documentation, set this field to null.
   documentation: 'README.md'
