@@ -1,6 +1,6 @@
 Package.describe({
   name: 'yang2007chun:materialize-scss',
-  version: '0.0.2',
+  version: '0.0.3',
   // Brief, one-line summary of the package.
   summary: 'materialize sass',
   // URL to the Git repository containing the source code for this package.
@@ -24,10 +24,10 @@ Package.onUse(function(api) {
 
   var serverDirectory = 'bower_components/materialize/sass/components/';
   var serverFiles = [
-    'date_picker/_default.date.scss*',
-    'date_picker/_default.scss*',
-    'date_picker/_default.time.scss*',
-    '_buttons.scss*',
+    'date_picker/_default.date.scss',
+    'date_picker/_default.scss',
+    'date_picker/_default.time.scss',
+    '_buttons.scss',
     '_cards.scss',
     '_collapsible.scss',
     '_color.scss',
@@ -35,28 +35,29 @@ Package.onUse(function(api) {
     '_form.scss',
     '_global.scss',
     '_grid.scss',
-    '_icons-material-design.scss*',
+    '_icons-material-design.scss',
     '_materialbox.scss',
     '_mixins.scss',
     '_modal.scss',
     '_navbar.scss',
     '_normalize.scss',
-    '_prefixer.scss*',
+    '_prefixer.scss',
     '_preloader.scss',
     '_roboto.scss',
     '_sideNav.scss',
     '_slider.scss',
     '_table_of_contents.scss',
-    '_tabs.scss*',
+    '_tabs.scss',
     '_toast.scss',
     '_tooltip.scss',
-    '_typography.scss*',
+    '_typography.scss',
     '_variables.scss',
     '_waves.scss'
   ];
   serverFiles = serverFiles.map(function(file){
+    console.log('file:', file);
     return clientDirectory + file;
   });
   serverFiles.push('bower_components/materialize/sass/materialize.scss');
-  api.addFiles(clientFiles, 'client');
+  api.addFiles(clientFiles, 'server');
 });
