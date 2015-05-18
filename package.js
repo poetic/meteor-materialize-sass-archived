@@ -16,27 +16,6 @@ Package.onUse(function(api) {
 
   var clientDirectory = 'bower_components/materialize/';
   var clientFiles = [
-    'font/material-design-icons/Material-Design-Icons.eot',
-    'font/material-design-icons/Material-Design-Icons.svg',
-    'font/material-design-icons/Material-Design-Icons.ttf',
-    'font/material-design-icons/Material-Design-Icons.woff',
-    'font/material-design-icons/Material-Design-Icons.woff2',
-    'font/roboto/Roboto-Bold.ttf',
-    'font/roboto/Roboto-Bold.woff',
-    'font/roboto/Roboto-Bold.woff2',
-    'font/roboto/Roboto-Light.ttf',
-    'font/roboto/Roboto-Light.woff',
-    'font/roboto/Roboto-Light.woff2',
-    'font/roboto/Roboto-Medium.ttf',
-    'font/roboto/Roboto-Medium.woff',
-    'font/roboto/Roboto-Medium.woff2',
-    'font/roboto/Roboto-Regular.ttf',
-    'font/roboto/Roboto-Regular.woff',
-    'font/roboto/Roboto-Regular.woff2',
-    'font/roboto/Roboto-Thin.ttf',
-    'font/roboto/Roboto-Thin.woff',
-    'font/roboto/Roboto-Thin.woff2',
-    'bin/materialize.js',
   ];
   clientFiles = clientFiles.map(function(file){
     return clientDirectory + file;
