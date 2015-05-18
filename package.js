@@ -1,5 +1,5 @@
 Package.describe({
-  name: 'ayang2007chun:materialize-scss',
+  name: 'yang2007chun:materialize-scss',
   version: '0.0.2',
   // Brief, one-line summary of the package.
   summary: 'materialize sass',
