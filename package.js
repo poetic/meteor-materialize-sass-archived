@@ -1,6 +1,6 @@
 Package.describe({
   name: 'yang2007chun:materialize-scss',
-  version: '0.0.6',
+  version: '0.0.7',
   // Brief, one-line summary of the package.
   summary: 'materialize sass',
   // URL to the Git repository containing the source code for this package.
@@ -37,7 +37,6 @@ Package.onUse(function(api) {
     'font/roboto/Roboto-Thin.ttf',
     'font/roboto/Roboto-Thin.woff',
     'font/roboto/Roboto-Thin.woff2',
-    'bin/materialize.css',
     'bin/materialize.js'
   ];
   clientFiles = clientFiles.map(function(file){
