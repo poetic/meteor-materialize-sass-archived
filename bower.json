@@ -1,0 +1,18 @@
+{
+  "name": "materialize-scss",
+  "main": "materialize-scss.js",
+  "version": "0.0.1",
+  "authors": [
+    "Chun Yang <yang2007chun@gmail.com>"
+  ],
+  "description": "meteor materialize sass",
+  "keywords": [
+    "meteor",
+    "materialize",
+    "sass"
+  ],
+  "license": "MIT",
+  "dependencies": {
+    "materialize": "~0.96.1"
+  }
+}
