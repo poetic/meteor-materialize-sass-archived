@@ -1,10 +1,10 @@
 Package.describe({
   name: 'yang2007chun:materialize-scss',
-  version: '0.0.5',
+  version: '0.0.6',
   // Brief, one-line summary of the package.
   summary: 'materialize sass',
   // URL to the Git repository containing the source code for this package.
-  git: 'https://github.com/poetic/meteor-materialize-sass',
+  git: 'https://github.com/poetic/meteor-materialize-sass.git',
   // By default, Meteor will default to using README.md for documentation.
   // To avoid submitting documentation, set this field to null.
   documentation: 'README.md'
@@ -13,6 +13,7 @@ Package.describe({
 Package.onUse(function(api) {
   api.versionsFrom('METEOR@1.0');
   api.use('jquery', 'client');
+  api.export('Materialize', 'client');
 
   var clientDirectory = 'bower_components/materialize/';
   var clientFiles = [
@@ -36,7 +37,8 @@ Package.onUse(function(api) {
     'font/roboto/Roboto-Thin.ttf',
     'font/roboto/Roboto-Thin.woff',
     'font/roboto/Roboto-Thin.woff2',
-    'bin/materialize.js',
+    'bin/materialize.css',
+    'bin/materialize.js'
   ];
   clientFiles = clientFiles.map(function(file){
     return clientDirectory + file;
