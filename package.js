@@ -1,5 +1,5 @@
 Package.describe({
-  name: 'yang2007chun:materialize-scss',
+  name: 'ayang2007chun:materialize-scss',
   version: '0.0.1',
   // Brief, one-line summary of the package.
   summary: 'materialize sass',
@@ -11,11 +11,11 @@ Package.describe({
 });
 
 Package.onUse(function(api) {
-  api.versionsFrom('1.1.0.2');
+  api.versionsFrom('METEOR@1.0');
   api.use('jquery', 'client');
 
-  var directory = 'bower_components/materialize/';
-  var files = [
+  var clientDirectory = 'bower_components/materialize/';
+  var clientFiles = [
     'font/material-design-icons/Material-Design-Icons.eot',
     'font/material-design-icons/Material-Design-Icons.svg',
     'font/material-design-icons/Material-Design-Icons.ttf',
@@ -38,16 +38,46 @@ Package.onUse(function(api) {
     'font/roboto/Roboto-Thin.woff2',
     'bin/materialize.js',
   ];
-
-  files = files.map(function(file){
-    return directory + file;
+  clientFiles = clientFiles.map(function(file){
+    return clientDirectory + file;
   });
+  api.addFiles(clientFiles, 'client');
 
-  api.addFiles(files, 'client');
-});
-
-Package.onTest(function(api) {
-  api.use('tinytest');
-  api.use('poetic:materialize-scss');
-  api.addFiles('materialize-scss-tests.js');
+  var serverDirectory = 'bower_components/materialize/sass/components/';
+  var serverFiles = [
+    'date_picker/_default.date.scss*',
+    'date_picker/_default.scss*',
+    'date_picker/_default.time.scss*',
+    '_buttons.scss*',
+    '_cards.scss',
+    '_collapsible.scss',
+    '_color.scss',
+    '_dropdown.scss',
+    '_form.scss',
+    '_global.scss',
+    '_grid.scss',
+    '_icons-material-design.scss*',
+    '_materialbox.scss',
+    '_mixins.scss',
+    '_modal.scss',
+    '_navbar.scss',
+    '_normalize.scss',
+    '_prefixer.scss*',
+    '_preloader.scss',
+    '_roboto.scss',
+    '_sideNav.scss',
+    '_slider.scss',
+    '_table_of_contents.scss',
+    '_tabs.scss*',
+    '_toast.scss',
+    '_tooltip.scss',
+    '_typography.scss*',
+    '_variables.scss',
+    '_waves.scss'
+  ];
+  serverFiles = serverFiles.map(function(file){
+    return clientDirectory + file;
+  });
+  serverFiles.push('bower_components/materialize/sass/materialize.scss');
+  api.addFiles(clientFiles, 'client');
 });
