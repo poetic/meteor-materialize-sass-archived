@@ -776,8 +776,10 @@ $mdi-list-icons: (
   @return unquote("\"") + $str + unquote("\"");
 }
 
+// bugfix
+// https://github.com/Dogfalo/materialize/issues/1079
 @each $mdi-icon-name, $mdi-icon-value in $mdi-list-icons {
   .#{$mdi-prefix}#{$mdi-icon-name}:before {
-    content: unicode($mdi-icon-value);
+    content: "\""+ $mdi-icon-value +"\"";
   }
 }
