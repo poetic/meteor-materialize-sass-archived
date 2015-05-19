@@ -13,7 +13,7 @@ Add the following line to [index.scss](https://github.com/fourseven/meteor-scss#
 # NOTE
 As mentioned at [bootstrap3-sass](https://github.com/englue/meteor-bootstrap3-sass#to-use). If you see an error saying the above file is not found, try restart ther server.
 
-# DEV LOG
+# DEV LOG(For my own reference)
 - Fixd bug:
 ```
 // bower_components/materialize/sass/components/_icons-material-design.scss:780
