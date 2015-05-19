@@ -1,6 +1,6 @@
 Package.describe({
   name: 'yang2007chun:materialize-scss',
-  version: '0.0.11',
+  version: '0.0.12',
   // Brief, one-line summary of the package.
   summary: 'materialize sass',
   // URL to the Git repository containing the source code for this package.
@@ -15,8 +15,10 @@ Package.onUse(function(api) {
   api.use('jquery', 'client');
   api.export('Materialize', 'client');
 
-  var clientDirectory = 'bower_components/materialize/';
-  var clientFiles = [
+  // ----- client files
+  // font files
+  var fontDirectory = 'bower_components/materialize/';
+  var fontFiles = [
     'font/material-design-icons/Material-Design-Icons.eot',
     'font/material-design-icons/Material-Design-Icons.svg',
     'font/material-design-icons/Material-Design-Icons.ttf',
@@ -37,15 +39,16 @@ Package.onUse(function(api) {
     'font/roboto/Roboto-Thin.ttf',
     'font/roboto/Roboto-Thin.woff',
     'font/roboto/Roboto-Thin.woff2',
-    'bin/materialize.js'
   ];
-  clientFiles = clientFiles.map(function(file){
-    return clientDirectory + file;
-  });
-  api.addFiles(clientFiles, 'client');
+  fontFiles = prepandPathToFiles(fontFiles, fontDirectory);
+  api.addFiles(fontFiles, 'client');
+  // js files
+  api.addFiles(['bower_components/materialize/bin/materialize.js'], 'client');
 
-  var serverDirectory = 'bower_components/materialize/sass/components/';
-  var serverFiles = [
+  // ----- server files
+  // scss files
+  var scssDirectory = 'bower_components/materialize/sass/components/';
+  var scssFiles = [
     'date_picker/_default.date.scss',
     'date_picker/_default.scss',
     'date_picker/_default.time.scss',
@@ -76,9 +79,13 @@ Package.onUse(function(api) {
     '_variables.scss',
     '_waves.scss'
   ];
-  serverFiles = serverFiles.map(function(file){
-    return serverDirectory + file;
-  });
-  serverFiles.push('bower_components/materialize/sass/materialize.scss');
-  api.addFiles(serverFiles, 'server');
+  scssFiles = prepandPathToFiles(scssFiles, scssDirectory);
+  api.addFiles(scssFiles, 'server');
+  api.addFiles(['bower_components/materialize/sass/materialize.scss'], 'server');
 });
+
+function prepandPathToFiles(files, path) {
+  return files.map(function(file){
+    return path + file;
+  });
+}
