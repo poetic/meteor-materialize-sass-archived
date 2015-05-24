@@ -12,4 +12,4 @@ Add the following line to [index.scss](https://github.com/fourseven/meteor-scss#
 
 # NOTE
 - materialize version: 0.96.1
-- As mentioned at [bootstrap3-sass](https://github.com/englue/meteor-bootstrap3-sass#to-use). If you see an error saying the above file is not found, try restart ther server.
+- As mentioned at [bootstrap3-sass](https://github.com/englue/meteor-bootstrap3-sass#to-use). If you see an error saying the above file is not found, try restart your server.
