@@ -1,6 +1,6 @@
 Package.describe({
   name: 'yang2007chun:materialize-scss',
-  version: '1.0.3',
+  version: '1.1.0',
   // Brief, one-line summary of the package.
   summary: 'materialize sass',
   // URL to the Git repository containing the source code for this package.
@@ -19,11 +19,6 @@ Package.onUse(function(api) {
   // font files
   var fontDirectory = 'bower_components/materialize/';
   var fontFiles = [
-    'font/material-design-icons/Material-Design-Icons.eot',
-    'font/material-design-icons/Material-Design-Icons.svg',
-    'font/material-design-icons/Material-Design-Icons.ttf',
-    'font/material-design-icons/Material-Design-Icons.woff',
-    'font/material-design-icons/Material-Design-Icons.woff2',
     'font/roboto/Roboto-Bold.ttf',
     'font/roboto/Roboto-Bold.woff',
     'font/roboto/Roboto-Bold.woff2',

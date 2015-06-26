@@ -1,6 +1,5 @@
 {
   "name": "Materialize",
-  "version": "0.96.1",
   "description": "A modern responsive front-end framework based on Material Design",
   "keywords": [
     "css",
@@ -36,7 +35,8 @@
     "font/roboto/Roboto-Regular.woff2",
     "font/roboto/Roboto-Thin.ttf",
     "font/roboto/Roboto-Thin.woff",
-    "font/roboto/Roboto-Thin.woff2"
+    "font/roboto/Roboto-Thin.woff2",
+    "sass/*"
   ],
   "ignore": [
     "jade/",
@@ -63,14 +63,14 @@
     "jquery": ">=2.1.1"
   },
   "homepage": "https://github.com/Dogfalo/materialize",
-  "_release": "0.96.1",
+  "version": "0.97.0",
+  "_release": "0.97.0",
   "_resolution": {
     "type": "version",
-    "tag": "v0.96.1",
-    "commit": "7cdf0c8852ed14f81c7ee43eb573d8df8589ad94"
+    "tag": "v0.97.0",
+    "commit": "e374c8880833860617b9767312029bfb4a99c7a7"
   },
   "_source": "git://github.com/Dogfalo/materialize.git",
-  "_target": "~0.96.1",
-  "_originalSource": "materialize",
-  "_direct": true
+  "_target": "0.97.0",
+  "_originalSource": "materialize"
 }

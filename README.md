@@ -1,3 +1,6 @@
+# CHANGE LOG
+2015-06-26 upgrade to 0.97.0
+
 # INSTALL
 ```
 $ meteor add fourseven:scss
@@ -5,7 +8,7 @@ $ meteor add yang2007chun:materialize-scss
 $ meteor remove materialize:materialize # if you have materialize installed
 ```
 
-## SASS
+# SASS
 Add the following line to [index.scss](https://github.com/fourseven/meteor-scss#controlling-load-order-since-200-beta_3) file used by fourseven:scss at the TOP of the file:
 ```
 // You can override colors BEFORE materialize.scss:
@@ -18,9 +21,16 @@ Add the following line to [index.scss](https://github.com/fourseven/meteor-scss#
 @import ".meteor/local/build/programs/server/assets/packages/yang2007chun_materialize-scss/bower_components/materialize/sass/materialize.scss";
 ```
 
-## JAVASCRIPT
+# ICONS
+As mentioned at http://materializecss.com/icons.html, add the following to your
+head tag:
+```
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+```
+
+# JAVASCRIPT
 Javascript is automatically imported from this package.
 
 # NOTE
-- materialize version: 0.96.1
+- materialize version: 0.97.0
 - As mentioned at [bootstrap3-sass](https://github.com/englue/meteor-bootstrap3-sass#to-use). If you see an error saying the above file is not found, try restart your server.
