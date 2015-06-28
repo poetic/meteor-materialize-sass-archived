@@ -1,5 +1,11 @@
 # CHANGE LOG
-2015-06-26 upgrade to 0.97.0
+- 2015-06-26 upgrade to [0.97.0](https://github.com/Dogfalo/materialize/tree/v0.97.0#changelog)
+  -  Icon Change (*Breaking*):
+
+    ```<i class="mdi-content-add"></i>``` is still supported.
+
+    However you should use ```<i class="material-icons">add</i>``` instead as
+    metioned in the materialize [doc](http://materializecss.com/icons.html).
 
 # INSTALL
 ```
@@ -22,7 +28,9 @@ Add the following line to [index.scss](https://github.com/fourseven/meteor-scss#
 ```
 
 # ICONS
-Instead mentioned at http://materializecss.com/icons.html, we had already embed the MaterialIcons-Regular fonts to the package. So you do not have to add an additional head element.
+Icons are automatically imported from this package.
+
+You do NOT have to add an additional head element mentioned at http://materializecss.com/icons.html.
 
 Read more about the MaterialIcons at https://google.github.io/material-design-icons/
 
