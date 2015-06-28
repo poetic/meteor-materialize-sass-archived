@@ -52,4 +52,143 @@ $font-material-icons-file   : 'MaterialIcons-Regular';
     // Rules for using icons as white on a dark background.
     &.md-light { color: rgba(255, 255, 255, 1); }
     &.md-light.md-inactive { color: rgba(255, 255, 255, 0.3); }
+
+    /* rules taken from deprecated material-design-icons */
+
+    &:before {
+        display: inline-block;
+        speak: none;
+        text-decoration: inherit;
+    }
+
+    &.pull-left {
+        margin-right: .3em;
+    }
+
+    &.pull-right{
+        margin-left: .3em;
+    }
+
+    &.md-lg:before, &.md-lg:after {
+        font-size: 1.33333333em;
+        line-height: 0.75em;
+        vertical-align: -15%;
+    }
+
+    &.md-fw {
+        width: 1.28571429em;
+        text-align: center;
+    }
+
+    &.md-ul {
+        padding-left: 0;
+        margin-left: 2.14285714em;
+        list-style-type: none;
+    }
+
+    &.md-ul > li {
+        position: relative;
+    }
+
+    &.md-li {
+        position: absolute;
+        left: -2.14285714em;
+        width: 2.14285714em;
+        top: 0.14285714em;
+        text-align: center;
+    }
+
+    &.md-li.md-lg {
+        left: -1.85714286em;
+    }
+
+    &.md-border {
+        padding: .2em .25em .15em;
+        border: solid 0.08em #eeeeee;
+        border-radius: .1em;
+    }
+
+    &.md-spin {
+        -webkit-animation: md-spin 2s infinite linear;
+        animation: md-spin 2s infinite linear;
+        -webkit-transform-origin: 50% 50%;
+        -moz-transform-origin: 50% 50%;
+        -o-transform-origin: 50% 50%;
+        transform-origin: 50% 50%;
+    }
+    
+    &.md-pulse {
+        -webkit-animation: md-spin 1s steps(8) infinite;
+        animation: md-spin 1s steps(8) infinite ;
+        -webkit-transform-origin: 50% 50%;
+        -moz-transform-origin: 50% 50%;
+        -o-transform-origin: 50% 50%;
+        transform-origin: 50% 50%;
+    }
+
+    &.md-rotate-90 {
+        filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=1);
+        -webkit-transform: rotate(90deg);
+        -ms-transform: rotate(90deg);
+        transform: rotate(90deg);
+    }
+
+    &.md-rotate-180 {
+        filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=2);
+        -webkit-transform: rotate(180deg);
+        -ms-transform: rotate(180deg);
+        transform: rotate(180deg);
+    }
+
+    &.md-rotate-270 {
+        filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=3);
+        -webkit-transform: rotate(270deg);
+        -ms-transform: rotate(270deg);
+        transform: rotate(270deg);
+    }
+
+    &.md-flip-horizontal {
+        filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=0, mirror=1);
+        -webkit-transform: scale(-1, 1);
+        -ms-transform: scale(-1, 1);
+        transform: scale(-1, 1);
+    }
+
+    &.md-flip-vertical {
+        filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=2, mirror=1);
+        -webkit-transform: scale(1, -1);
+        -ms-transform: scale(1, -1);
+        transform: scale(1, -1);
+    }
+
+}
+
+:root .material-icons.md-rotate-90,
+:root .material-icons.md-rotate-180,
+:root .material-icons.md-rotate-270,
+:root .material-icons.md-flip-horizontal,
+:root .material-icons.md-flip-vertical {
+    filter: none;
+}
+
+@-webkit-keyframes md-spin {
+    0% {
+        -webkit-transform: rotate(0deg);
+        transform: rotate(0deg);
+    }
+    100% {
+        -webkit-transform: rotate(359deg);
+        transform: rotate(359deg);
+    }
+}
+
+@keyframes md-spin {
+    0% {
+        -webkit-transform: rotate(0deg);
+        transform: rotate(0deg);
+    }
+    100% {
+        -webkit-transform: rotate(359deg);
+        transform: rotate(359deg);
+    }
 }
