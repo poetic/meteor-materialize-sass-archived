@@ -22,11 +22,9 @@ Add the following line to [index.scss](https://github.com/fourseven/meteor-scss#
 ```
 
 # ICONS
-As mentioned at http://materializecss.com/icons.html, add the following to your
-head tag:
-```
-<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-```
+Instead mentioned at http://materializecss.com/icons.html, we had already embed the MaterialIcons-Regular fonts to the package. So you do not have to add an additional head element.
+
+Read more about the MaterialIcons at https://google.github.io/material-design-icons/
 
 # JAVASCRIPT
 Javascript is automatically imported from this package.
