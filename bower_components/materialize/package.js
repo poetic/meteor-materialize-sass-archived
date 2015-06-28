@@ -15,6 +15,10 @@ Package.onUse(function (api) {
   api.export('Materialize', 'client');
 
   api.addFiles([
+    'font/material-design-icons/MaterialIcons-Regular.eot',
+    'font/material-design-icons/MaterialIcons-Regular.ttf',
+    'font/material-design-icons/MaterialIcons-Regular.woff',
+    'font/material-design-icons/MaterialIcons-Regular.woff2',
     'font/material-design-icons/Material-Design-Icons.eot',
     'font/material-design-icons/Material-Design-Icons.svg',
     'font/material-design-icons/Material-Design-Icons.ttf',
