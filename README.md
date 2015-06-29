@@ -38,5 +38,9 @@ Read more about the MaterialIcons at https://google.github.io/material-design-ic
 Javascript is automatically imported from this package.
 
 # NOTE
-- materialize version: 0.97.0
 - As mentioned at [bootstrap3-sass](https://github.com/englue/meteor-bootstrap3-sass#to-use). If you see an error saying the above file is not found, try restart your server.
+- If you update and miss the icons font, you should run ```meteor reset``` to get a fresh build.
+
+# VERSIONS
+- 1.1.x -> materialize version: 0.96.x
+- 1.2.x -> materialize version: 0.97.x

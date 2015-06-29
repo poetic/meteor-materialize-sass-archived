@@ -1,6 +1,6 @@
 Package.describe({
   name: 'yang2007chun:materialize-scss',
-  version: '1.2.0',
+  version: '1.2.1',
   // Brief, one-line summary of the package.
   summary: 'materialize sass',
   // URL to the Git repository containing the source code for this package.
