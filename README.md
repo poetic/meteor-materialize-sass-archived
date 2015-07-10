@@ -1,6 +1,3 @@
-# RENAMED
-Please use the new package at https://atmospherejs.com/poetic/materialize-scss
-
 # CHANGE LOG
 - 2015-06-26 upgrade to [0.97.0](https://github.com/Dogfalo/materialize/tree/v0.97.0#changelog)
   -  Icon Change (*Breaking*):
