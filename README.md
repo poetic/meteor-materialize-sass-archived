@@ -24,7 +24,7 @@ Add the following line to [index.scss](https://github.com/fourseven/meteor-scss#
 // WRONG! $primary-color: color("materialize-red", "lighten-2");
 
 // @import "your-awesome-color-varialbes.scss"
-@import ".meteor/local/build/programs/server/assets/packages/yang2007chun_materialize-scss/bower_components/materialize/sass/materialize.scss";
+@import ".meteor/local/build/programs/server/assets/packages/poetic_materialize-scss/bower_components/materialize/sass/materialize.scss";
 ```
 
 # ICONS
