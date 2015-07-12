@@ -10,7 +10,7 @@
 # INSTALL
 ```
 $ meteor add fourseven:scss
-$ meteor add yang2007chun:materialize-scss
+$ meteor add poetic:materialize-scss
 $ meteor remove materialize:materialize # if you have materialize installed
 ```
 
