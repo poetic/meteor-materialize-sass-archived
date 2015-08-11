@@ -13,6 +13,6 @@
   ],
   "license": "MIT",
   "dependencies": {
-    "materialize": "0.97.0"
+    "materialize": "cbcf4c8f6c229f42dba1dd3ccde1788d7f96ff80"
   }
 }
