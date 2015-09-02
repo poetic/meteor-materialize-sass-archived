@@ -2625,7 +2625,7 @@ $(document).ready(function(){
       thumb.find('.value').html($(this).val());
     });
 
-    $(document).on('mousedown touchstart', range_type, function(e) {
+    $(document).on('input mousedown touchstart', range_type, function(e) {
       var thumb = $(this).siblings('.thumb');
 
       // If thumb indicator does not exist yet, create it
@@ -2644,7 +2644,7 @@ $(document).ready(function(){
         thumb.velocity({ height: "30px", width: "30px", top: "-20px", marginLeft: "-15px"}, { duration: 300, easing: 'easeOutExpo' });
       }
 
-      if(e.pageX === undefined || e.pageX === null){//mobile
+      if((e.pageX === undefined || e.pageX === null) && e.originalEvent.touches){//mobile
          left = e.originalEvent.touches[0].pageX - $(this).offset().left;
       }
       else{ // desktop
@@ -2725,7 +2725,7 @@ $(document).ready(function(){
       // Tear down structure if Select needs to be rebuilt
       var lastID = $select.data('select-id');
       if (lastID) {
-        $select.parent().find('i').remove();
+        $select.parent().find('span.caret').remove();
         $select.parent().find('input').remove();
 
         $select.unwrap();
