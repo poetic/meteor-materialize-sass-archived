@@ -47,7 +47,7 @@ Package.onUse(function(api) {
   fontFiles = prepandPathToFiles(fontFiles, fontDirectory);
   api.addFiles(fontFiles, 'client');
   // js files
-  api.addFiles(['bower_components/materialize/bin/materialize.js'], 'client');
+  api.addFiles(['bower_components/materialize/dist/js/materialize.js'], 'client');
 
   // ----- server files
   // scss files
