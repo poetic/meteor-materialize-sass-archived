@@ -8,12 +8,15 @@ $icons-font-path: "/packages/poetic_materialize-scss/bower_components/materializ
 
 - Change date picker bug: obscure month and year
 ```
-bower_components/materialize/sass/components/date_picker/_default.scss
-.picker__select--year.browser-default {
-  width: 26%
-}
-
+bower_components/materialize/sass/components/date_picker/_default.date.scss
 .picker__select--month.browser-default {
-  width: 42%
+  display: inline;
+  background-color: #FFFFFF;
+  width: 40%; // 42%
+}
+.picker__select--year.browser-default {
+  display: inline;
+  background-color: #FFFFFF;
+  width: 25%; // 26%
 }
 ```
