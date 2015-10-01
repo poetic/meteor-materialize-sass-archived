@@ -11,13 +11,20 @@ Package.describe({
 });
 
 Package.onUse(function(api) {
-  api.versionsFrom('METEOR@1.0');
+  api.versionsFrom('METEOR@1.2');
+
+  api.use([
+    'meteor',
+    'jquery',
+    'fourseven:scss@3.3.3'
+  ]);
+
   api.use('jquery', 'client');
   api.export('Materialize', 'client');
 
   // ----- client files
   // font files
-  var fontDirectory = 'bower_components/materialize/';
+  var fontDirectory = 'assets/materialize/';
   var fontFiles = [
     'font/material-design-icons/Material-Design-Icons.eot',
     'font/material-design-icons/Material-Design-Icons.svg',
@@ -45,13 +52,13 @@ Package.onUse(function(api) {
     'font/roboto/Roboto-Thin.woff2',
   ];
   fontFiles = prepandPathToFiles(fontFiles, fontDirectory);
-  api.addFiles(fontFiles, 'client');
+  api.addAssets(fontFiles, 'client');
   // js files
-  api.addFiles(['bower_components/materialize/dist/js/materialize.js'], 'client');
+  api.addFiles(['assets/materialize/dist/js/materialize.js'], 'client');
 
   // ----- server files
   // scss files
-  var scssDirectory = 'bower_components/materialize/sass/components/';
+  var scssDirectory = 'assets/materialize/sass/components/';
   var scssFiles = [
     'date_picker/_default.date.scss',
     'date_picker/_default.scss',
@@ -85,8 +92,8 @@ Package.onUse(function(api) {
     '_waves.scss'
   ];
   scssFiles = prepandPathToFiles(scssFiles, scssDirectory);
-  api.addFiles(scssFiles, 'server');
-  api.addFiles(['bower_components/materialize/sass/materialize.scss'], 'server');
+  api.addFiles(scssFiles, 'client');
+  api.addFiles(['assets/materialize/sass/materialize.scss'], 'client');
 });
 
 function prepandPathToFiles(files, path) {

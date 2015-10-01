@@ -1,0 +1,39 @@
+@charset "UTF-8";
+
+// Mixins
+@import "{poetic:materialize-scss}/assets/materialize/sass/components/prefixer";
+@import "{poetic:materialize-scss}/assets/materialize/sass/components/mixins";
+@import "{poetic:materialize-scss}/assets/materialize/sass/components/color";
+
+// Variables;
+@import "{poetic:materialize-scss}/assets/materialize/sass/components/variables";
+
+// Reset
+@import "{poetic:materialize-scss}/assets/materialize/sass/components/normalize";
+
+// components
+@import "{poetic:materialize-scss}/assets/materialize/sass/components/global";
+@import "{poetic:materialize-scss}/assets/materialize/sass/components/icons-material-design";
+@import "{poetic:materialize-scss}/assets/materialize/sass/components/material-icons";
+@import "{poetic:materialize-scss}/assets/materialize/sass/components/grid";
+@import "{poetic:materialize-scss}/assets/materialize/sass/components/navbar";
+@import "{poetic:materialize-scss}/assets/materialize/sass/components/roboto";
+@import "{poetic:materialize-scss}/assets/materialize/sass/components/typography";
+@import "{poetic:materialize-scss}/assets/materialize/sass/components/cards";
+@import "{poetic:materialize-scss}/assets/materialize/sass/components/toast";
+@import "{poetic:materialize-scss}/assets/materialize/sass/components/tabs";
+@import "{poetic:materialize-scss}/assets/materialize/sass/components/tooltip";
+@import "{poetic:materialize-scss}/assets/materialize/sass/components/buttons";
+@import "{poetic:materialize-scss}/assets/materialize/sass/components/dropdown";
+@import "{poetic:materialize-scss}/assets/materialize/sass/components/waves";
+@import "{poetic:materialize-scss}/assets/materialize/sass/components/modal";
+@import "{poetic:materialize-scss}/assets/materialize/sass/components/collapsible";
+@import "{poetic:materialize-scss}/assets/materialize/sass/components/materialbox";
+@import "{poetic:materialize-scss}/assets/materialize/sass/components/form";
+@import "{poetic:materialize-scss}/assets/materialize/sass/components/table_of_contents";
+@import "{poetic:materialize-scss}/assets/materialize/sass/components/sideNav";
+@import "{poetic:materialize-scss}/assets/materialize/sass/components/preloader";
+@import "{poetic:materialize-scss}/assets/materialize/sass/components/slider";
+@import "{poetic:materialize-scss}/assets/materialize/sass/components/date_picker/default.scss";
+@import "{poetic:materialize-scss}/assets/materialize/sass/components/date_picker/default.date.scss";
+@import "{poetic:materialize-scss}/assets/materialize/sass/components/date_picker/default.time.scss";
