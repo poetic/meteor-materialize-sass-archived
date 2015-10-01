@@ -20,3 +20,10 @@ bower_components/materialize/sass/components/date_picker/_default.date.scss
   width: 25%; // 26%
 }
 ```
+
+- Change bower_components/materialize/sass/materialize.scss
+
+```
+@import "components/prefixer";
+@import "{poetic:materialize-scss}/bower_components/materialize/sass/components/prefixer";
+```

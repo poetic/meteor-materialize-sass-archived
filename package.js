@@ -1,6 +1,6 @@
 Package.describe({
   name: 'poetic:materialize-scss',
-  version: '1.2.10',
+  version: '1.3.0',
   // Brief, one-line summary of the package.
   summary: 'materialize sass',
   // URL to the Git repository containing the source code for this package.
@@ -11,11 +11,14 @@ Package.describe({
 });
 
 Package.onUse(function(api) {
-  api.versionsFrom('METEOR@1.0');
-  api.use('jquery', 'client');
+  api.versionsFrom('METEOR@1.2');
+  api.use([
+    'meteor',
+    'jquery',
+    'fourseven:scss@3.3.3'
+  ]);
   api.export('Materialize', 'client');
 
-  // ----- client files
   // font files
   var fontDirectory = 'bower_components/materialize/';
   var fontFiles = [
@@ -45,11 +48,11 @@ Package.onUse(function(api) {
     'font/roboto/Roboto-Thin.woff2',
   ];
   fontFiles = prepandPathToFiles(fontFiles, fontDirectory);
-  api.addFiles(fontFiles, 'client');
+  api.addAssets(fontFiles, 'client');
+
   // js files
   api.addFiles(['bower_components/materialize/dist/js/materialize.js'], 'client');
 
-  // ----- server files
   // scss files
   var scssDirectory = 'bower_components/materialize/sass/components/';
   var scssFiles = [
@@ -85,8 +88,8 @@ Package.onUse(function(api) {
     '_waves.scss'
   ];
   scssFiles = prepandPathToFiles(scssFiles, scssDirectory);
-  api.addFiles(scssFiles, 'server');
-  api.addFiles(['bower_components/materialize/sass/materialize.scss'], 'server');
+  api.addFiles(scssFiles, 'client');
+  api.addFiles(['bower_components/materialize/sass/materialize.scss'], 'client');
 });
 
 function prepandPathToFiles(files, path) {

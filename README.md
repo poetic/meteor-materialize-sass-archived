@@ -1,4 +1,10 @@
 # CHANGE LOG
+
+- 2015-10-01 update package for METEOR@1.2 (*Breaking*)
+  - fourseven:scss is updated to 3.3.3_1
+  - scss.json is not used anymore.
+  - index.scss is not autoupdated anymore, you need to manullay update index.scss.
+
 - 2015-06-26 upgrade to [0.97.0](https://github.com/Dogfalo/materialize/tree/v0.97.0#changelog)
   -  Icon Change (*Breaking*):
 
@@ -15,16 +21,14 @@ $ meteor remove materialize:materialize # if you have materialize installed
 ```
 
 # SASS
-Add the following line to [index.scss](https://github.com/fourseven/meteor-scss#controlling-load-order-since-200-beta_3) file used by fourseven:scss at the TOP of the file:
+Add the following line to your last-loaded scss file (E.G. main.scss):
 ```
-// You can override colors BEFORE materialize.scss:
-// $primary-color: blue;
+// If you want to override materialize sass variables you can uncomment the following:
+@import "{poetic:materialize-scss}/bower_components/materialize/sass/components/_color.scss";
+//$primary-color: color("blue", "lighten-2");
 
-// You can NOT use materialize color mixins since they are not imported yet.
-// WRONG! $primary-color: color("materialize-red", "lighten-2");
-
-// @import "your-awesome-color-varialbes.scss"
-@import ".meteor/local/build/programs/server/assets/packages/poetic_materialize-scss/bower_components/materialize/sass/materialize.scss";
+// import main scss file
+@import "{poetic:materialize-scss}/bower_components/materialize/sass/materialize.scss";
 ```
 
 # ICONS
@@ -37,10 +41,7 @@ Read more about the MaterialIcons at https://google.github.io/material-design-ic
 # JAVASCRIPT
 Javascript is automatically imported from this package.
 
-# NOTE
-- As mentioned at [bootstrap3-sass](https://github.com/englue/meteor-bootstrap3-sass#to-use). If you see an error saying the above file is not found, try restart your server.
-- If you update and miss the icons font, you should run ```meteor reset``` to get a fresh build.
-
 # VERSIONS
 - 1.1.x -> materialize version: 0.96.x
 - 1.2.x -> materialize version: 0.97.x
+- 1.3.x -> materialize version: 0.97.x, meteor version: 1.2.x
