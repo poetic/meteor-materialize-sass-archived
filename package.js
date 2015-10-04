@@ -1,6 +1,6 @@
 Package.describe({
   name: 'poetic:materialize-scss',
-  version: '1.3.3',
+  version: '1.3.4',
   // Brief, one-line summary of the package.
   summary: 'materialize sass',
   // URL to the Git repository containing the source code for this package.
