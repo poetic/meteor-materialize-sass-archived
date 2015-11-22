@@ -1,3 +1,6 @@
+# THIS REPO IS ARCHIVED
+New repo: https://github.com/poetic/meteor-materialize-scss
+
 # CHANGE LOG
 
 - 2015-10-01 update package for METEOR@1.2 (*Breaking*)
